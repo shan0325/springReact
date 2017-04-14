@@ -32,7 +32,7 @@ class App extends React.Component {
 						 body={ this.props.contentBody }/>
 					{/*<RandomNumber number={this.state.value}	 
 								onUpdate={this.updateValue} />*/}
-					{/*<Contacts/>*/}
+					{<Contacts/>}
                 	{/*<EmployeeController/>*/}
 			</div>
         );
