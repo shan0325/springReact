@@ -2,7 +2,17 @@ var path = require('path');
 
 module.exports = {
     entry: './src/main/js/index.js',
-    devtool: 'sourcemaps',
+    devtool: 'inline-source-map',
+    devServer: {
+    	historyApiFallback: true,
+        compress: true,
+        publicPath: '/',
+        host: "0.0.0.0",
+        port: 3000,
+        proxy: {
+            "**": "http://localhost:8080"
+        }
+    },
     cache: true,
     debug: true,
     output: {

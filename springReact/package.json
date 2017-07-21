@@ -29,7 +29,11 @@
     "webpack": "^1.13.2"
   },
   "scripts": {
-    "watch": "webpack --watch -d"
+  	"start": "webpack-dev-server --progress --inline",
+    "watch": "webpack -d --watch",
+    "dev": "webpack -d",
+    "prod": "webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "babel-core": "^6.7.0",
